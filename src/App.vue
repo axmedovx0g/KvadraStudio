@@ -1,11 +1,10 @@
 <template>
   <div class="app">
-    <home></home>
     <router-view />
   </div>
 </template>
 <script>
-import home from '@/views/HomeView.vue'
+import home from '@/views/Home.vue'
 export default {
   components: {
     home
