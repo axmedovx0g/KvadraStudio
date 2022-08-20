@@ -2,8 +2,8 @@
   <div class="header">
     <div class="header__content">
       <div class="header__content--item">
-        <h5>g. Yaroslavl,</h5>
-        <p>ul. Shapova, 20, Ofis 326</p>
+        <h5>г. Ярославль,</h5>
+        <p>ул. Щапова, 20, Офис 326</p>
       </div>
       <div class="header__content--item">
         <h5>info@kvadrastudio.ru</h5>
@@ -15,11 +15,11 @@
       </div>
       <div class="header__content--item">
         <h5>+7 (4852) 94-28-50</h5>
-        <p>Pn-Pt: 9.00 - 18.00</p>
+        <p>Пн-Пт: 9.00 - 18.00</p>
       </div>
       <div class="header__content--item">
         <div>
-            <button class="btn">perezvanite mne</button>
+            <button class="btn">Перезвоните мне</button>
         </div>
       </div>
     </div>
