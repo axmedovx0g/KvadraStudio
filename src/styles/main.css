@@ -1,7 +1,31 @@
+.header {
+  width: 100%;
+  padding: 1rem 10rem;
+}
+.header__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+.header__content--item {
+  display: flex;
+}
+.header__content--item .logo img {
+  src: url("../assets/Logo_Kvadra_2014_cr+ 1.jpg");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.btn {
+  background: none;
+  border: 1px solid;
+  padding: 10px 25px;
 }
 
 /*# sourceMappingURL=main.css.map */

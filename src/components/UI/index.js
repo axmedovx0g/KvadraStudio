@@ -1,5 +1,5 @@
-import HelloWorld from '@/components/UI/HelloWorld' 
+import Menu from '@/components/UI/Menu.vue'
 
 export default [
-    HelloWorld
+    Menu,
 ]

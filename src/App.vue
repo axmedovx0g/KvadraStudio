@@ -1,20 +1,19 @@
 <template>
-  <div class="app">
-    <router-view />
+  <div>
+    <header-component></header-component>
   </div>
 </template>
 <script>
-import home from '@/views/Home.vue'
+import Menu from '@/components/UI/Menu.vue';
+import HeaderComponent from '@/components/Header.vue'
+
 export default {
   components: {
-    home
+    Menu,
+    HeaderComponent
   },
 };
 </script>
-<style>
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+<style src="@/styles/main.css">
+
 </style>

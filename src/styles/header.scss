@@ -1,0 +1,22 @@
+.header{
+    width: 100%;
+    padding: 1rem 10rem;
+
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid;
+
+        &--item{
+            display: flex;
+
+            .logo{
+                img{
+                    src: url('../assets/Logo_Kvadra_2014_cr+\ 1.jpg');
+                }
+            }
+        }
+    }
+}
