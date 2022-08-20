@@ -1,20 +1,20 @@
 <template>
   <section class="section-portfolio">
     <div class="section-portfolio__content">
-      <img v-bind:src="img" />
+      <img v-bind:src="img" class="img" />
     </div>
     <div class="section-portfolio__content">
       <div class="section-portfolio__content--text">
         <h2>15+</h2>
-        <p>let na rinke</p>
+        <p>лет на рынке</p>
       </div>
       <div class="section-portfolio__content--text">
         <h2>600+</h2>
-        <p>proektov</p>
+        <p>проектов</p>
       </div>
       <div class="section-portfolio__content--text">
         <h2>40000</h2>
-        <p>m2 voploshsheno</p>
+        <p>м2 воплощено</p>
       </div>
       <div class="section-portfolio__content--text">
         <h2>
@@ -31,7 +31,7 @@
             />
           </svg>
         </h2>
-        <p>idei</p>
+        <p>Идей</p>
       </div>
     </div>
   </section>
