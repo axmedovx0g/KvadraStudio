@@ -10,7 +10,7 @@
       </div>
       <div class="header__content--item">
         <div class="logo">
-          <img src="" alt="">
+          <img src="" alt="" />
         </div>
       </div>
       <div class="header__content--item">
@@ -19,7 +19,7 @@
       </div>
       <div class="header__content--item">
         <div>
-            <button class="btn">Перезвоните мне</button>
+          <button class="btn">Перезвоните мне</button>
         </div>
       </div>
     </div>
@@ -28,6 +28,10 @@
 <script>
 export default {
   components: {},
+  data() {
+    return {
+    };
+  },
 };
 </script>
 <style src="@/styles/main.css"></style>
