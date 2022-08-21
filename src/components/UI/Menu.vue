@@ -1,6 +1,6 @@
 <template>
     <div>
-        ello
+        Hello
     </div>
 </template>
 
