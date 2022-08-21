@@ -276,17 +276,25 @@
 
 .view-projects {
   width: 100%;
-  height: 170px;
   background-color: #897163;
   color: #fff;
   font-family: Proxima;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: 4rem;
+  padding: 4rem 0;
+  margin: 0 0 5rem;
+  position: relative;
+  height: 170px;
 }
 .view-projects .wrapper {
   width: 400%;
+  position: absolute;
+  animation-name: floatLeft;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 .view-projects .wrapper__content {
   display: flex;
@@ -304,6 +312,14 @@
   margin: 0 2rem;
 }
 
+@keyframes floatLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1500px);
+  }
+}
 @font-face {
   font-family: "Proxima";
   src: url(../font/proxima_nova_regular.ttf), url(../font/proxima_nova_light.otf), url(../font/proxima_nova_bold.otf);
