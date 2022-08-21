@@ -1,82 +1,100 @@
-.section-about{
+@mixin font($weiht,
+    $size,
+    $lineH,
+    $family) {
+    font-weight: $weiht;
+    font-size: $size+px;
+    line-height: calc($lineH / $size * 100%);
+    font-family: $family;
+}
+
+.section-about {
     width: 100%;
     margin: 0;
-    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('../assets/Rectangle 33.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../assets/Rectangle 33.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 95vh;
     min-height: 900px;
     color: #fff;
-    padding: 2rem 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Proxima;
 
-    &__content{
+    &__container {
+        width: 90%;
+        height: 900px;
+        margin: 0 auto;
+    }
+
+    &__content {
         display: flex;
         flex-direction: column;
 
-        .header-text{
-            padding: 2rem 4rem;
-            h1{
-                font-size: 80px;
-                font-weight: 400;
+        .header-text {
+            padding: 2rem 0rem;
+
+            h1 {
+                @include font(300, 80, 97, Proxima);
                 text-transform: uppercase;
-                color: rgba(255, 255, 255, 0.9);
+                letter-spacing: 0.02em;
             }
         }
 
-        .body-text{
+        .body-text {
             display: flex;
             align-items: center;
-            padding: 2rem 4rem;
+            padding: 2rem 0rem;
 
-            .text{
-                font-size: 32px;
-                font-weight: 100;
+            .text {
                 display: flex;
                 flex-direction: column;
-                line-height: 56px;
                 padding: 0 2rem;
-                letter-spacing: 1px;
                 color: rgba(255, 255, 255, 0.9);
 
+                &_form {
+                    @include font(300, 32, 56, Proxima);
+                    letter-spacing: 0.02em;
+                }
 
-                &__footer{
+                &__footer {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
                     margin: 3rem 0 0 0;
 
-                    &--content{
+                    &--content {
+                        @include font(300, 28, 56, Proxima);
                         color: #c5c5c5;
                         font-style: italic;
+                        letter-spacing: 0.02em;
                     }
                 }
             }
         }
     }
 
-    &__items{
+    &__items {
         width: 100%;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        flex: 1 0 0;
-        // margin: 0 0 2rem;
+        // flex: 1 0 auto;
+        bottom: 20px;
+        margin-top: 185px;
         padding: 0 3rem 2rem;
 
-        .items__svg{
+        .items__svg {
             display: flex;
             cursor: pointer;
-            .active{
+
+            .active {
                 width: 100px;
                 height: 0;
                 border: 1px solid #fff;
             }
-            div{
+
+            div {
                 margin: 0 1rem;
                 width: 50px;
                 height: 0;
