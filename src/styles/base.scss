@@ -1,6 +1,7 @@
 @import 'main';
 @import 'header';
 @import 'sectionPortfolio';
+@import 'sectionAbout';
 
 @font-face {
     font-family: "Proxima";
@@ -30,4 +31,10 @@
     background: none;
     border: 1px solid;
     padding: 10px 25px;
+}
+
+.app{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }

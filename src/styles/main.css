@@ -70,6 +70,7 @@
 
 .section-portfolio {
   width: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -78,11 +79,9 @@
 .section-portfolio__content {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
-}
-.section-portfolio__content img {
-  width: 100%;
+  overflow: hidden;
+  padding: 2rem 5rem 5rem;
 }
 .section-portfolio__content--text {
   display: flex;
@@ -93,12 +92,86 @@
 .section-portfolio__content--text h2 {
   font-size: 60px;
   font-weight: 400;
-  margin: 2rem 0;
+  padding: 2rem 2rem 0;
 }
 .section-portfolio__content--text p {
+  padding: 2rem 2rem 2rem;
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.section-about {
+  width: 100%;
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/Rectangle 33.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  color: #fff;
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-about__content {
+  display: flex;
+  flex-direction: column;
+}
+.section-about__content .header-text {
+  padding: 2rem 4rem;
+}
+.section-about__content .header-text h1 {
+  font-size: 80px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.section-about__content .body-text {
+  display: flex;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+.section-about__content .body-text .text {
+  font-size: 32px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  line-height: 56px;
+  padding: 0 2rem;
+  letter-spacing: 1px;
+}
+.section-about__content .body-text .text__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 3rem 0 0 0;
+}
+.section-about__content .body-text .text__footer--content {
+  font-style: italic;
+}
+.section-about__items {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex: 1 0 0;
+  padding: 0 3rem 2rem;
+}
+.section-about__items .items__svg {
+  display: flex;
+  cursor: pointer;
+}
+.section-about__items .items__svg .active {
+  width: 100px;
+  height: 0;
+  border: 1px solid #fff;
+}
+.section-about__items .items__svg div {
+  margin: 0 1rem;
+  width: 50px;
+  height: 0;
+  border: 1px solid #888;
 }
 
 @font-face {
@@ -124,6 +197,12 @@
   background: none;
   border: 1px solid;
   padding: 10px 25px;
+}
+
+.app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
