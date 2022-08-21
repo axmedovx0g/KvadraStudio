@@ -1,8 +1,16 @@
+@mixin font($weiht,
+    $size,
+    $lineH,
+    $family) {
+    font-weight: $weiht;
+    font-size: $size+px;
+    line-height: calc($lineH / $size * 100%);
+    font-family: $family;
+}
 .view-projects {
   width: 100%;
   background-color: #897163;
   color: #fff;
-  font-family: Proxima;
   display: flex;
   align-items: center;
   overflow: hidden;

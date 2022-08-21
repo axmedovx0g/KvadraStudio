@@ -1,80 +1,88 @@
-.section-works{
-    font-family: Proxima;
-    padding: 7rem 8rem;
+@mixin font($weiht,
+    $size,
+    $lineH,
+    $family) {
+    font-weight: $weiht;
+    font-size: $size+px;
+    line-height: calc($lineH / $size * 100%);
+    font-family: $family;
+}
+
+.section-works {
+    padding: 7rem 0rem;
     width: 100%;
     height: 100%;
 
-    &__content{
+    &__content {
+        width: 90%;
+        margin: 0 auto;
 
-        &--text{
-            h1{
-                font-size: 80px;
-                font-weight: 300;
-                line-height: 97px;
+        &--text {
+            h1 {
+                @include font(400, 80, 97.44, Proxima);
+                text-transform: uppercase;
             }
-            P{
-                font-size: 32px;
-                font-weight: 400;
-                line-height: 50px;
+
+            P {
+                @include font(400, 32, 50, Proxima);
                 margin: 1rem 0 0;
             }
         }
 
-        &--items, .work__items{
+        &--items,
+        .work__items {
             display: flex;
             flex-direction: column;
 
-            &--content{
+            &--content {
                 display: flex;
                 flex-direction: row;
 
-                p{
-                    font-size: 20px;
-                    font-weight: 400;
-                    line-height: 42px;
+                p {
                     color: #555;
                     margin: 2rem 1.5rem 2rem 0;
-                    padding: 1px 0;
+                    @include font(400, 20, 42, Proxima);
                 }
 
-                .active{
+                .active {
+                    @include font(600, 20, 42, Proxima);
                     color: #333;
                     border-bottom: 2px solid #333;
                 }
             }
 
-            &__works, .works{
+            &__works,
+            .works {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
 
-                &__content{
+                &__content {
 
-                    .content{
-                        h4{
-                            font-size: 28px;
-                            font-weight: 300;
-                            line-height: 42px;
+                    .content {
+                        &:first-child {
+                            @include font(400, 28, 42, Proxima);
+                        }
+
+                        h4 {
+                            @include font(400, 28, 50, Proxima);
                             color: #333;
                             margin: 1rem 0;
                         }
-                        p{
-                            font-size: 28px;
-                            font-weight: 300;
-                            line-height: 50px;
+
+                        p {
+                            @include font(400, 28, 50, Proxima);
                             color: #888;
                             margin: 1rem 0;
                         }
-                        .btn-view{
-                            font-family: Proxima;
-                            font-size: 20px;
-                            font-weight: 400;
-                            line-height: 42px;
-                            padding: 1px 0;
+
+                        .btn-view {
+                            @include font(600, 20, 42, Proxima);
                             border: none;
                             background: none;
                             border-bottom: 2px solid #333;
                             margin: 0 0 5rem;
+                            letter-spacing: 0.02em;
                         }
                     }
                 }
