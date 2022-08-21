@@ -75,6 +75,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  font-family: Ashley;
 }
 .section-portfolio__content {
   display: flex;
@@ -95,6 +96,7 @@
   padding: 2rem 2rem 0;
 }
 .section-portfolio__content--text p {
+  font-family: Proxima;
   padding: 2rem 2rem 2rem;
   font-size: 28px;
   font-weight: 400;
@@ -108,12 +110,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 95%;
+  height: 95vh;
+  min-height: 900px;
   color: #fff;
   padding: 2rem 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Proxima;
 }
 .section-about__content {
   display: flex;
@@ -126,6 +130,7 @@
   font-size: 80px;
   font-weight: 400;
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
 }
 .section-about__content .body-text {
   display: flex;
@@ -134,12 +139,13 @@
 }
 .section-about__content .body-text .text {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 100;
   display: flex;
   flex-direction: column;
   line-height: 56px;
   padding: 0 2rem;
   letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.9);
 }
 .section-about__content .body-text .text__footer {
   display: flex;
@@ -148,6 +154,7 @@
   margin: 3rem 0 0 0;
 }
 .section-about__content .body-text .text__footer--content {
+  color: #c5c5c5;
   font-style: italic;
 }
 .section-about__items {

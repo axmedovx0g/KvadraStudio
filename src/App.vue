@@ -3,6 +3,7 @@
     <header-component></header-component>
     <section-portfolio></section-portfolio>
     <section-about></section-about>
+    
 
   </div>
 </template>

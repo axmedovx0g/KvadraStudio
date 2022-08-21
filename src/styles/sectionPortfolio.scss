@@ -5,6 +5,7 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: Ashley;
 
     &__content{
         display: flex;
@@ -25,6 +26,7 @@
                 padding: 2rem 2rem 0;
             }
             p{
+                font-family: Proxima;
                 padding: 2rem 2rem 2rem;
                 font-size: 28px;
                 font-weight: 400;
