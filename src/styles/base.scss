@@ -2,13 +2,31 @@
 @import 'header';
 @import 'sectionPortfolio';
 
-*{
+@font-face {
+    font-family: "Proxima";
+    src: url(../font/proxima_nova_regular.ttf),
+        url(../font/proxima_nova_light.otf),
+        url(../font/proxima_nova_bold.otf),
+}
+
+@font-face {
+    font-family: "Ashley";
+    src: url(../font/Ashley_Capitali_Sofia.ttf);
+}
+
+@font-face {
+    font-family: "Proxima-Italic";
+    src: url(../font/proxima_nova_light_italic.ttf);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-.btn{
+.btn {
     background: none;
     border: 1px solid;
     padding: 10px 25px;

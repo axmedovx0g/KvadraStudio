@@ -10,7 +10,9 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-
+        img{
+            width: 100%;
+        }
         &--text{
             display: flex;
             flex-direction: column;

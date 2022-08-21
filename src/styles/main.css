@@ -1,9 +1,11 @@
 .header {
   width: 100%;
-  padding: 1rem 10rem;
+  max-height: 136px;
 }
 .header__content {
-  width: 100%;
+  width: 90%;
+  height: 136px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,8 +14,58 @@
 .header__content--item {
   display: flex;
 }
-.header__content--item .logo img {
-  src: url("../assets/Logo_Kvadra_2014_cr+ 1.jpg");
+.header__content--item h5 {
+  font-size: 16px;
+  font-family: Proxima;
+  font-weight: 600;
+  line-height: 125%;
+  color: #333;
+}
+.header__content--item p {
+  line-height: 125%;
+  font-size: 16px;
+  font-family: Proxima;
+  font-weight: 400;
+  margin-left: 5px;
+  color: #555;
+}
+.header__content--item .btn {
+  width: 192px;
+  height: 46px;
+  line-height: 162.5%;
+  font-size: 16px;
+  font-family: Proxima;
+  font-weight: 600;
+}
+
+.menu {
+  width: 100%;
+  padding: 20px 0px;
+}
+.menu_content {
+  width: 90%;
+  margin: 0 auto;
+}
+.menu_content-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_content-list .dots {
+  width: 5px;
+  height: 5px;
+  background: #333;
+  border-radius: 50%;
+}
+.menu_content-list--item * {
+  font-family: Proxima;
+  font-weight: 400;
+  line-height: 200%;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: black;
 }
 
 .section-portfolio {
@@ -28,6 +80,9 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+.section-portfolio__content img {
+  width: 100%;
 }
 .section-portfolio__content--text {
   display: flex;
@@ -46,10 +101,23 @@
   text-transform: uppercase;
 }
 
+@font-face {
+  font-family: "Proxima";
+  src: url(../font/proxima_nova_regular.ttf), url(../font/proxima_nova_light.otf), url(../font/proxima_nova_bold.otf);
+}
+@font-face {
+  font-family: "Ashley";
+  src: url(../font/Ashley_Capitali_Sofia.ttf);
+}
+@font-face {
+  font-family: "Proxima-Italic";
+  src: url(../font/proxima_nova_light_italic.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .btn {

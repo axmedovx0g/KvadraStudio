@@ -1,7 +1,8 @@
 <template>
   <div>
-    <!-- <header-component></header-component> -->
-    <section-portfolio></section-portfolio>
+    <header-component></header-component>
+    <!-- <section-portfolio></section-portfolio> -->
+    
   </div>
 </template>
 <script>

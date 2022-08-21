@@ -10,7 +10,7 @@
       </div>
       <div class="header__content--item">
         <div class="logo">
-          <img src="" alt="" />
+          <img src="@/assets/Logo.jpg" alt="" />
         </div>
       </div>
       <div class="header__content--item">
@@ -18,16 +18,32 @@
         <p>Пн-Пт: 9.00 - 18.00</p>
       </div>
       <div class="header__content--item">
-        <div>
           <button class="btn">Перезвоните мне</button>
-        </div>
       </div>
     </div>
+  </div>
+  <div class="menu">
+    <nav class="menu_content">
+      <ul class="menu_content-list">
+        <li class="menu_content-list--item"><a href="#">Портфолио</a></li>
+        <span class="dots"></span>
+        <li class="menu_content-list--item"><a href="#">услуги</a></li>
+        <span class="dots"></span>
+        <li class="menu_content-list--item"><a href="#">Цены</a></li>
+        <span class="dots"></span>
+        <li class="menu_content-list--item"><a href="#">На заказ</a></li>
+        <span class="dots"></span>
+        <li class="menu_content-list--item"><a href="#">О нас</a></li>
+        <span class="dots"></span>
+        <li class="menu_content-list--item"><a href="#">Блог</a></li>
+        <span class="dots"></span>
+        <li class="menu_content-list--item"><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
   </div>
 </template>
 <script>
 export default {
-  components: {},
   data() {
     return {
     };
