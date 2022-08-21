@@ -15,10 +15,11 @@
     width: 400%;
     position: absolute;
     animation-name: floatLeft;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    color: #fff;
     // transform: translateX(-1500);
 
     &__content {
