@@ -1,6 +1,7 @@
 <template>
   <section class="section-about">
-    <div class="section-about__content">
+   <div class="section-about__container">
+     <div class="section-about__content">
       <div class="header-text">
         <h1>Отзывы о нас</h1>
       </div>
@@ -20,7 +21,7 @@
           </svg>
         </div>
         <div class="text">
-          <p>
+          <p class="text_form">
             Поставленные задачи и их решение, а также выполненный объем работ
             позволяют характеризовать ООО «Студия Квадра» как передовую
             архитектурно-дизайнерскую студию и надежного подрядчика, старательно
@@ -72,6 +73,7 @@
         </svg>
       </div>
     </div>
+   </div>
   </section>
 </template>
 <script>

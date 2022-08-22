@@ -1,44 +1,21 @@
-// import { createRouter, createWebHistory } from 'vue-router'
-// import App from '@/App.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+import PrivateProjects from '@/components/privateProjects.vue'
+import PublicProjects from '@/components/publicProjects.vue'
 
-// const routes = [
-//   {
-//     path: '/',
-//     component: App
-//   },
-//   {
-//     path: '/portfolio',
-//     component: Portfolio
-//   },
-//   {
-//     path: '/service',
-//     component: Service
-//   },
-//   {
-//     path: '/costs',
-//     component: Costs
-//   },
-//   {
-//     path: '/order',
-//     component:  Order
-//   },
-//   {
-//     path: '/about-us',
-//     component: AboutUs
-//   },
-//   {
-//     path: '/blog',
-//     component: Blog
-//   },
-//   {
-//     path: '/contacts',
-//     component: Contacts
-//   },
-// ]
+const routes = [
+  {
+    path: '/',
+    component: PrivateProjects
+  },
+  {
+    path: '/public',
+    component: PublicProjects
+  }
+]
 
-// const router = createRouter({
-//   history: createWebHistory(process.env.BASE_URL),
-//   routes
-// })
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+})
 
-// export default router
+export default router
