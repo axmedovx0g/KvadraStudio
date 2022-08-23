@@ -254,51 +254,30 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.section-works__content--items__works__content,
-.section-works__content--items .works__content,
-.section-works__content .work__items__works__content,
-.section-works__content .work__items .works__content {
-  width: calc(50% - 20px);
-}
-.section-works__content--items__works__content .img img,
-.section-works__content--items .works__content .img img,
-.section-works__content .work__items__works__content .img img,
-.section-works__content .work__items .works__content .img img {
-  width: 100%;
-}
-.section-works__content--items__works__content .content:first-child,
-.section-works__content--items .works__content .content:first-child,
-.section-works__content .work__items__works__content .content:first-child,
-.section-works__content .work__items .works__content .content:first-child {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 150%;
-  font-family: Proxima;
-}
-.section-works__content--items__works__content .content .content h4,
-.section-works__content--items .works__content .content .content h4,
-.section-works__content .work__items__works__content .content .content h4,
-.section-works__content .work__items .works__content .content .content h4 {
+.section-works__content--items__works__content .content h4,
+.section-works__content--items .works__content .content h4,
+.section-works__content .work__items__works__content .content h4,
+.section-works__content .work__items .works__content .content h4 {
   font-size: 28px;
   font-weight: 300;
   line-height: 42px;
   color: #333;
   margin: 1rem 0;
 }
-.section-works__content--items__works__content .content .content p,
-.section-works__content--items .works__content .content .content p,
-.section-works__content .work__items__works__content .content .content p,
-.section-works__content .work__items .works__content .content .content p {
+.section-works__content--items__works__content .content p,
+.section-works__content--items .works__content .content p,
+.section-works__content .work__items__works__content .content p,
+.section-works__content .work__items .works__content .content p {
   font-size: 28px;
   font-weight: 300;
   line-height: 50px;
   color: #888;
   margin: 1rem 0;
 }
-.section-works__content--items__works__content .content .content .btn-view,
-.section-works__content--items .works__content .content .content .btn-view,
-.section-works__content .work__items__works__content .content .content .btn-view,
-.section-works__content .work__items .works__content .content .content .btn-view {
+.section-works__content--items__works__content .content .btn-view,
+.section-works__content--items .works__content .content .btn-view,
+.section-works__content .work__items__works__content .content .btn-view,
+.section-works__content .work__items .works__content .content .btn-view {
   font-family: Proxima;
   font-size: 20px;
   font-weight: 400;
