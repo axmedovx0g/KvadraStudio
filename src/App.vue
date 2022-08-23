@@ -1,6 +1,8 @@
 <template>
   <div class="app">
     <header-component></header-component>
+    <section-create></section-create>
+    <section-comfort></section-comfort>
     <section-portfolio></section-portfolio>
     <section-about></section-about>
     <section-works></section-works>
@@ -13,6 +15,8 @@ import sectionPortfolio from "@/components/sectionPortfolio.vue";
 import sectionAbout from "@/components/sectionAbout.vue";
 import sectionWorks from "@/components/sectionWorks.vue";
 import ViewProjects from './components/UI/viewProjects.vue';
+import sectionCreate from './components/sectionCreate.vue';
+import sectionComfort from './components/sectionComfort.vue';
 
 export default {
   components: {
@@ -21,6 +25,8 @@ export default {
     sectionAbout,
     sectionWorks,
     ViewProjects,
+    sectionCreate,
+    sectionComfort
   },
 };
 </script>

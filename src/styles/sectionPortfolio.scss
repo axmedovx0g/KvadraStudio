@@ -1,3 +1,12 @@
+@mixin font($weiht,
+    $size,
+    $lineH,
+    $family) {
+    font-weight: $weiht;
+    font-size: $size+px;
+    line-height: calc($lineH / $size * 100%);
+    font-family: $family;
+}
 .section-portfolio {
     width: 100%;
     height: 100%;
@@ -5,7 +14,6 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: Ashley;
 
     &__content {
         display: flex;
@@ -32,13 +40,13 @@
             align-items: center;
 
             h2 {
-                @include font(400, 60, 73, Proxima);
+                @include font(400, 60, 73, Ashley);
                 letter-spacing: 0.02em;
                 padding: 2rem 2rem 0;
             }
 
             p {
-                @include font(400, 28, 32, Proxima);
+                @include font(400, 28, 32, Ashley);
                 padding: 1rem 2rem 4rem;
                 text-transform: uppercase;
                 letter-spacing: 0.02em
