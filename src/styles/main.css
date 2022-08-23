@@ -319,6 +319,47 @@
     transform: translateX(-1500px);
   }
 }
+.section-research {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.section-research__content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+}
+.section-research__content--text {
+  background-color: #333;
+  color: #fff;
+  font-family: Proxima;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding: 4rem 3rem;
+  margin: 0 0 4px 0;
+}
+.section-research__content--text p {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin: 0 6rem 2rem 0;
+}
+.section-research__content--text h1 {
+  font-size: 54px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+.section-research .svg {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+
 @font-face {
   font-family: "Proxima";
   src: url(../font/proxima_nova_regular.ttf), url(../font/proxima_nova_light.otf), url(../font/proxima_nova_bold.otf);
