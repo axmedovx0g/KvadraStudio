@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin font($weiht, $size, $lineH, $family) {
   font-weight: $weiht;
   font-size: $size + px;
@@ -34,17 +35,52 @@
             @include font(400, 32, 50, Proxima);
             margin: 1rem 0 0;
           }
+=======
+@mixin font($weiht,
+    $size,
+    $lineH,
+    $family) {
+    font-weight: $weiht;
+    font-size: $size+px;
+    line-height: calc($lineH / $size * 100%);
+    font-family: $family;
+}
+
+.section-works {
+    padding: 7rem 0rem;
+    width: 100%;
+    height: 100%;
+
+    &__content {
+        width: 90%;
+        margin: 0 auto;
+
+        &--text {
+            h1 {
+                @include font(400, 80, 97.44, Proxima);
+                text-transform: uppercase;
+            }
+
+            P {
+                @include font(400, 32, 50, Proxima);
+                margin: 1rem 0 0;
+            }
+>>>>>>> c807ad0fe5f1ed624ae4f86b3c4ddda73a2c6cf9
         }
 
         &--items,
         .work__items {
+<<<<<<< HEAD
           display: flex;
           flex-direction: column;
 
           &--content {
+=======
+>>>>>>> c807ad0fe5f1ed624ae4f86b3c4ddda73a2c6cf9
             display: flex;
             flex-direction: row;
 
+<<<<<<< HEAD
             p {
               color: #555;
               margin: 2rem 1.5rem 2rem 0;
@@ -59,6 +95,60 @@
               @include font(600, 20, 42, Proxima);
               color: #333;
               border-bottom: 2px solid #333;
+=======
+            &--content {
+                display: flex;
+                flex-direction: row;
+
+                p {
+                    color: #555;
+                    margin: 2rem 1.5rem 2rem 0;
+                    @include font(400, 20, 42, Proxima);
+                }
+
+                .active {
+                    @include font(600, 20, 42, Proxima);
+                    color: #333;
+                    border-bottom: 2px solid #333;
+                }
+            }
+
+            &__works,
+            .works {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                &__content {
+
+                    .content {
+                        &:first-child {
+                            @include font(400, 28, 42, Proxima);
+                        }
+
+                        h4 {
+                            @include font(400, 28, 50, Proxima);
+                            color: #333;
+                            margin: 1rem 0;
+                        }
+
+                        p {
+                            @include font(400, 28, 50, Proxima);
+                            color: #888;
+                            margin: 1rem 0;
+                        }
+
+                        .btn-view {
+                            @include font(600, 20, 42, Proxima);
+                            border: none;
+                            background: none;
+                            border-bottom: 2px solid #333;
+                            margin: 0 0 5rem;
+                            letter-spacing: 0.02em;
+                        }
+                    }
+                }
+>>>>>>> c807ad0fe5f1ed624ae4f86b3c4ddda73a2c6cf9
             }
           }
 
