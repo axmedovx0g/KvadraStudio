@@ -5,6 +5,8 @@
 @import 'sectionWorks';
 @import 'viewProject';
 @import 'sectionCreate';
+@import 'sectionComfort';
+@import 'sectionTechResearch';
 @font-face {
     font-family: "Proxima";
     src: url(../font/proxima_nova_regular.ttf),
@@ -33,6 +35,7 @@
     background: none;
     border: 1px solid;
     padding: 10px 25px;
+    cursor: pointer;
 }
 
 .app{

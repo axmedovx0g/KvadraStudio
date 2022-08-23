@@ -7,17 +7,18 @@
     <section-about></section-about>
     <section-works></section-works>
     <view-projects></view-projects>
+    <section-tech-research></section-tech-research>
   </div>
 </template>
 <script>
 import HeaderComponent from "@/components/Header.vue";
 import sectionPortfolio from "@/components/sectionPortfolio.vue";
 import sectionAbout from "@/components/sectionAbout.vue";
+import sectionCreate from "@/components/sectionCreate.vue";
+import sectionComfort from "@/components/sectionComfort.vue";
 import sectionWorks from "@/components/sectionWorks.vue";
-import ViewProjects from './components/UI/viewProjects.vue';
-import sectionCreate from './components/sectionCreate.vue';
-import sectionComfort from './components/sectionComfort.vue';
-
+import ViewProjects from "./components/UI/viewProjects.vue";
+import SectionTechResearch from './components/sectionTechResearch.vue';
 export default {
   components: {
     HeaderComponent,
@@ -26,7 +27,8 @@ export default {
     sectionWorks,
     ViewProjects,
     sectionCreate,
-    sectionComfort
+    sectionComfort,
+    SectionTechResearch,
   },
 };
 </script>

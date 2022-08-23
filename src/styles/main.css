@@ -206,26 +206,20 @@
 }
 
 .section-works {
-  padding: 7rem 0rem;
+  font-family: Proxima;
+  padding: 7rem 8rem;
   width: 100%;
   height: 100%;
 }
-.section-works__content {
-  width: 90%;
-  margin: 0 auto;
-}
 .section-works__content--text h1 {
-  font-weight: 400;
   font-size: 80px;
-  line-height: 121.8%;
-  font-family: Proxima;
-  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 97px;
 }
 .section-works__content--text P {
-  font-weight: 400;
   font-size: 32px;
-  line-height: 156.25%;
-  font-family: Proxima;
+  font-weight: 400;
+  line-height: 50px;
   margin: 1rem 0 0;
 }
 .section-works__content--items,
@@ -240,19 +234,15 @@
 }
 .section-works__content--items--content p,
 .section-works__content .work__items--content p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 42px;
   color: #555;
   margin: 2rem 1.5rem 2rem 0;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 210%;
-  font-family: Proxima;
+  padding: 1px 0;
 }
 .section-works__content--items--content .active,
 .section-works__content .work__items--content .active {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 210%;
-  font-family: Proxima;
   color: #333;
   border-bottom: 2px solid #333;
 }
@@ -285,41 +275,39 @@
   line-height: 150%;
   font-family: Proxima;
 }
-.section-works__content--items__works__content .content h4,
-.section-works__content--items .works__content .content h4,
-.section-works__content .work__items__works__content .content h4,
-.section-works__content .work__items .works__content .content h4 {
-  font-weight: 400;
+.section-works__content--items__works__content .content .content h4,
+.section-works__content--items .works__content .content .content h4,
+.section-works__content .work__items__works__content .content .content h4,
+.section-works__content .work__items .works__content .content .content h4 {
   font-size: 28px;
-  line-height: 178.5714285714%;
-  font-family: Proxima;
+  font-weight: 300;
+  line-height: 42px;
   color: #333;
   margin: 1rem 0;
 }
-.section-works__content--items__works__content .content p,
-.section-works__content--items .works__content .content p,
-.section-works__content .work__items__works__content .content p,
-.section-works__content .work__items .works__content .content p {
-  font-weight: 400;
+.section-works__content--items__works__content .content .content p,
+.section-works__content--items .works__content .content .content p,
+.section-works__content .work__items__works__content .content .content p,
+.section-works__content .work__items .works__content .content .content p {
   font-size: 28px;
-  line-height: 178.5714285714%;
-  font-family: Proxima;
+  font-weight: 300;
+  line-height: 50px;
   color: #888;
   margin: 1rem 0;
 }
-.section-works__content--items__works__content .content .btn-view,
-.section-works__content--items .works__content .content .btn-view,
-.section-works__content .work__items__works__content .content .btn-view,
-.section-works__content .work__items .works__content .content .btn-view {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 210%;
+.section-works__content--items__works__content .content .content .btn-view,
+.section-works__content--items .works__content .content .content .btn-view,
+.section-works__content .work__items__works__content .content .content .btn-view,
+.section-works__content .work__items .works__content .content .content .btn-view {
   font-family: Proxima;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 42px;
+  padding: 1px 0;
   border: none;
   background: none;
   border-bottom: 2px solid #333;
   margin: 0 0 5rem;
-  letter-spacing: 0.02em;
 }
 
 .view-projects {
@@ -338,7 +326,7 @@
   width: 400%;
   position: absolute;
   animation-name: floatLeft;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
@@ -433,6 +421,47 @@
   color: white;
 }
 
+.section-research {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.section-research__content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+}
+.section-research__content--text {
+  background-color: #333;
+  color: #fff;
+  font-family: Proxima;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding: 4rem 3rem;
+  margin: 0 0 4px 0;
+}
+.section-research__content--text p {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin: 0 6rem 2rem 0;
+}
+.section-research__content--text h1 {
+  font-size: 54px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+.section-research .svg {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+
 @font-face {
   font-family: "Proxima";
   src: url(../font/proxima_nova_regular.ttf), url(../font/proxima_nova_light.otf), url(../font/proxima_nova_bold.otf);
@@ -456,6 +485,7 @@
   background: none;
   border: 1px solid;
   padding: 10px 25px;
+  cursor: pointer;
 }
 
 .app {
