@@ -10,6 +10,7 @@
     <section-tech-research></section-tech-research>
     <section-interior></section-interior>
     <section-cards></section-cards>
+    <section-about-us></section-about-us>
   </div>
 </template>
 <script>
@@ -23,6 +24,7 @@ import ViewProjects from "./components/UI/viewProjects.vue";
 import SectionTechResearch from "./components/sectionTechResearch.vue";
 import sectionCards from "./components/sectionCards.vue";
 import SectionInterior from "@/components/sectionInterior";
+import sectionAboutUs from "@/components/sectionAboutUs.vue";
 export default {
   components: {
     HeaderComponent,
@@ -35,6 +37,7 @@ export default {
     SectionTechResearch,
     sectionCards,
     SectionInterior,
+    sectionAboutUs,
   },
 };
 </script>
