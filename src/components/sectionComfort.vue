@@ -3,8 +3,8 @@
     <div class="section-comfort__content">
       <div class="section-comfort__conteiner content">
         <div class="content-title">
-          <p><b>Мы с вами</b>на всех этапах:</p>
-          <p>создаём дизайн-проект, ищем
+          <p><b>Мы с вами</b> на всех этапах:</p>
+          <p>создаём дизайн-проект, ищем <br>
             пространство и следим за ходом работ
           </p>
         </div>
