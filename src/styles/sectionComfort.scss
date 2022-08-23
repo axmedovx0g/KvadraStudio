@@ -6,9 +6,7 @@
     font-size: $size+px;
     line-height: calc($lineH / $size * 100%);
     font-family: $family;
-}
-
-// @include font(300, 80, 97.44, Proxima);
+}   ;
 
 .section-comfort {
     width: 100%;

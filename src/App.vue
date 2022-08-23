@@ -8,6 +8,8 @@
     <section-works></section-works>
     <view-projects></view-projects>
     <section-tech-research></section-tech-research>
+
+    <section-cards></section-cards>
   </div>
 </template>
 <script>
@@ -18,7 +20,8 @@ import sectionCreate from "@/components/sectionCreate.vue";
 import sectionComfort from "@/components/sectionComfort.vue";
 import sectionWorks from "@/components/sectionWorks.vue";
 import ViewProjects from "./components/UI/viewProjects.vue";
-import SectionTechResearch from './components/sectionTechResearch.vue';
+import SectionTechResearch from "./components/sectionTechResearch.vue";
+import sectionCards from "./components/sectionCards.vue";
 export default {
   components: {
     HeaderComponent,
@@ -29,6 +32,7 @@ export default {
     sectionCreate,
     sectionComfort,
     SectionTechResearch,
+    sectionCards,
   },
 };
 </script>

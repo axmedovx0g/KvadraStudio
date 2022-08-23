@@ -515,6 +515,44 @@
   left: 90%;
 }
 
+.section-cards {
+  width: 100%;
+  max-height: 1610px;
+  background: #897163;
+  padding: 100px 0px;
+}
+.section-cards__container {
+  width: 90%;
+  margin: 0 auto;
+}
+.section-cards .content_card {
+  display: flex;
+}
+.section-cards .content_card:not(:last-child) {
+  margin-bottom: 100px;
+}
+.section-cards .content_card img {
+  width: 50%;
+  height: 400px;
+}
+.section-cards .content-text {
+  width: 50%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-cards .content-text p {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 121.8%;
+  font-family: Proxima;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+
 @font-face {
   font-family: "Proxima";
   src: url(../font/proxima_nova_regular.ttf), url(../font/proxima_nova_light.ttf), url(../font/proxima_nova_bold.otf);
