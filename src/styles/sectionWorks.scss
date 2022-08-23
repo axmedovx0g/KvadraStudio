@@ -53,19 +53,10 @@
 
                 &__content {
                     width: calc(100% / 2 - 20px);
-
-                    .img {
-                        img {
-                            width: 100%;
-                        }
+                    img{
+                        width: 100%;
                     }
-
                     .content {
-                        &:first-child {
-                            @include font(400, 28, 42, Proxima);
-                        }
-
-
                         h4 {
                             font-size: 28px;
                             font-weight: 300;
@@ -93,7 +84,6 @@
                             border-bottom: 2px solid #333;
                             margin: 0 0 5rem;
                         }
-
                     }
                 }
             }
