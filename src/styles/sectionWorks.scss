@@ -65,35 +65,35 @@
                             @include font(400, 28, 42, Proxima);
                         }
 
-                        .content {
-                            h4 {
-                                font-size: 28px;
-                                font-weight: 300;
-                                line-height: 42px;
-                                color: #333;
-                                margin: 1rem 0;
-                            }
 
-                            p {
-                                font-size: 28px;
-                                font-weight: 300;
-                                line-height: 50px;
-                                color: #888;
-                                margin: 1rem 0;
-                            }
-
-                            .btn-view {
-                                font-family: Proxima;
-                                font-size: 20px;
-                                font-weight: 400;
-                                line-height: 42px;
-                                padding: 1px 0;
-                                border: none;
-                                background: none;
-                                border-bottom: 2px solid #333;
-                                margin: 0 0 5rem;
-                            }
+                        h4 {
+                            font-size: 28px;
+                            font-weight: 300;
+                            line-height: 42px;
+                            color: #333;
+                            margin: 1rem 0;
                         }
+
+                        p {
+                            font-size: 28px;
+                            font-weight: 300;
+                            line-height: 50px;
+                            color: #888;
+                            margin: 1rem 0;
+                        }
+
+                        .btn-view {
+                            font-family: Proxima;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 42px;
+                            padding: 1px 0;
+                            border: none;
+                            background: none;
+                            border-bottom: 2px solid #333;
+                            margin: 0 0 5rem;
+                        }
+
                     }
                 }
             }
