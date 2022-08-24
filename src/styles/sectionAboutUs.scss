@@ -9,6 +9,7 @@
 }
 
 .section-about-us {
+    min-height: 1126px;
     padding-top: 100px;
 
     &__content {
@@ -66,10 +67,3 @@
         margin: 0 auto;
     }
 }
-
-
-
-
-
-
-// @include font(300, 80, 97, Proxima);

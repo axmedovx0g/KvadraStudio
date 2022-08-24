@@ -628,6 +628,7 @@
 }
 
 .section-about-us {
+  min-height: 1126px;
   padding-top: 100px;
 }
 .section-about-us__content {
@@ -681,6 +682,71 @@
 .section-about-us__conteiner {
   width: 90%;
   margin: 0 auto;
+}
+
+.section-interer__conteiner {
+  width: 90%;
+  margin: 0 auto;
+}
+.section-interer .content-header p {
+  letter-spacing: 0.02em;
+}
+.section-interer .content-header p:first-child {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 121.8%;
+  font-family: Proxima;
+  text-transform: uppercase;
+}
+.section-interer .content-header p:last-child {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 156.25%;
+  font-family: Proxima;
+  margin: 20px 0px 50px;
+}
+.section-interer .content .mb {
+  margin-bottom: 50px;
+}
+.section-interer .content-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.section-interer .content-box:nth-child(1) {
+  background: #000;
+}
+.section-interer .content-box img {
+  width: 100%;
+}
+.section-interer .content-box__play {
+  width: 372px;
+  height: 372px;
+  position: absolute;
+  top: 30%;
+  border-radius: 50%;
+  border: 2px solid rgba(51, 51, 51, 0.8);
+  padding: 43px;
+}
+.section-interer .content-box__play button {
+  width: 286px;
+  height: 286px;
+  background: #897163;
+  border: none;
+  border-radius: 50%;
+}
+.section-interer .content-footer {
+  width: 90%;
+  margin: 36px 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-interer .content-footer p {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 156.25%;
+  font-family: Proxima;
+  letter-spacing: 0.02em;
 }
 
 @font-face {
