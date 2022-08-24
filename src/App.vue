@@ -12,6 +12,7 @@
     <section-cards></section-cards>
     <section-about-us></section-about-us>
     <section-interer></section-interer>
+    <section-design></section-design>
   </div>
 </template>
 <script>
@@ -26,7 +27,9 @@ import SectionTechResearch from "./components/sectionTechResearch.vue";
 import sectionCards from "./components/sectionCards.vue";
 import SectionInterior from "@/components/sectionInterior";
 import sectionAboutUs from "@/components/sectionAboutUs.vue";
-import SectionInterer from '@/components/sectionInterer.vue';
+import SectionInterer from "@/components/sectionInterer.vue";
+import SectionDesign from './components/section_Design.vue';
+
 export default {
   components: {
     HeaderComponent,
@@ -41,6 +44,8 @@ export default {
     SectionInterior,
     sectionAboutUs,
     SectionInterer,
+    SectionDesign,
+    // SectionDesign,
   },
 };
 </script>

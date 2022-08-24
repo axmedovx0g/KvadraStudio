@@ -1,0 +1,95 @@
+@mixin font($weiht,
+    $size,
+    $lineH,
+    $family) {
+    font-weight: $weiht;
+    font-size: $size+px;
+    line-height: calc($lineH / $size * 100%);
+    font-family: $family;
+}
+
+;
+
+.section-design {
+    width: 100%;
+    max-height: 1914px;
+    background: #897163;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    .content {
+        &-header {
+            width: 90%;
+            margin: 0 auto 80px;
+
+            p {
+                color: #FFF;
+
+                &:first-child {
+                    @include font(300, 80, 97.44, Proxima);
+                    text-transform: uppercase;
+                }
+
+                &:last-child {
+                    @include font(400, 32, 50, Proxima);
+                    margin: 20px 0px 50px;
+                }
+
+                letter-spacing: 0.02em;
+            }
+        }
+        .left{
+            justify-content: flex-start;
+            margin-right: auto;
+            margin-left: 0;
+            button{
+                right: -5%;
+            }
+        }
+        &-box {
+            width: 90%;
+            margin-left: auto;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            align-items: center;
+            &:not(:last-child){
+                margin-bottom: 80px;
+            }
+            // &:last-child{
+            //     justify-content: space-between;
+            //     margin-left: auto;
+            // }
+            .btn{
+                left: -5%;
+            }
+            button {
+                width: 680px;
+                height: 140px;
+                position: absolute;
+                z-index: 2;
+                background: #333333;
+                opacity: 0.8;
+                border: none;
+                @include font(400, 60, 80, Proxima);
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #F5F5F5;
+                
+                &:hover {
+                    background: linear-gradient(0deg, #646060, #646060),
+                        linear-gradient(0deg, #FCFCFC, #FCFCFC);
+                    border: 1px solid #FCFCFC
+                }
+            }
+            img{
+                width: 100%;
+                max-width: 1374px;
+            }
+            .arrow{
+                position: absolute;
+                margin-top: 356px;
+                left: -5%;
+            }
+        }
+    }
+}
