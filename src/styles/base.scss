@@ -9,6 +9,10 @@
 @import 'sectionTechResearch';
 @import 'sectionInterior';
 @import 'sectionDefinition';
+@import 'sectionCards';
+@import 'sectionAboutUs';
+@import 'sectionInterer';
+@import 'sectionDesign';
 
 @font-face {
     font-family: "Proxima";
@@ -39,6 +43,17 @@
     border: 1px solid;
     padding: 10px 25px;
     cursor: pointer;
+    color: #333;
+    outline: none;
+}
+
+.btn-secondary{
+    background: #897163;
+    border: 1px solid transparent;
+    color: #fff;
+    padding: 10px 25px;
+    cursor: pointer;
+    outline: none;
 }
 
 .app{

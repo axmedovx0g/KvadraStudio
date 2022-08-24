@@ -1,0 +1,69 @@
+@mixin font($weiht,
+    $size,
+    $lineH,
+    $family) {
+    font-weight: $weiht;
+    font-size: $size+px;
+    line-height: calc($lineH / $size * 100%);
+    font-family: $family;
+}
+
+.section-about-us {
+    min-height: 1126px;
+    padding-top: 100px;
+
+    &__content {
+        width: 100%;
+        height: 450px;
+        background:linear-gradient(0deg, rgba(255, 255, 255, 0.312), rgba(255, 255, 255, 0.05)), url(../assets/Rectangle_23.jpg);
+        background-size: contain;
+
+
+        .content {
+            padding: 200px 100px 100px;
+
+            &-box {
+                padding: 40px;
+                background: rgba(255, 255, 255, 0.8);
+                box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+
+                &_text {
+                    .btn_view {
+                        font-family: Proxima;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 42px;
+                        padding: 1px 0;
+                        border: none;
+                        background: none;
+                        border-bottom: 2px solid #333;
+                        margin: 3rem 0;
+                    }
+
+                    h2 {
+                        @include font(300, 80, 97.44, Proxima);
+                        margin-bottom: 30px;
+                    }
+
+                    .title {
+                        @include font(400, 28, 34.1, Proxima);
+                        letter-spacing: 0.02em;
+                    }
+
+                    p {
+                        @include font(400, 20, 32, Proxima);
+
+                        &:not(:last-child) {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__conteiner {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

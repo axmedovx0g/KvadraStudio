@@ -9,7 +9,11 @@
     <view-projects></view-projects>
     <section-tech-research></section-tech-research>
     <section-interior></section-interior>
+    <section-cards></section-cards>
     <section-definition></section-definition>
+    <section-about-us></section-about-us>
+    <section-interer></section-interer>
+    <section-design></section-design>
   </div>
 </template>
 <script>
@@ -21,8 +25,14 @@ import sectionComfort from "@/components/sectionComfort.vue";
 import sectionWorks from "@/components/sectionWorks.vue";
 import ViewProjects from "./components/UI/viewProjects.vue";
 import SectionTechResearch from './components/sectionTechResearch.vue';
-import SectionInterior from './components/sectionInterior.vue';
 import sectionDefinition from './components/sectionDefinition.vue';
+import sectionCards from "./components/sectionCards.vue";
+import SectionInterior from "@/components/sectionInterior";
+import sectionAboutUs from "@/components/sectionAboutUs.vue";
+import SectionInterer from "@/components/sectionInterer.vue";
+import SectionDesign from './components/section_Design.vue';
+
+
 export default {
   components: {
     HeaderComponent,
@@ -33,7 +43,12 @@ export default {
     sectionCreate,
     sectionComfort,
     SectionTechResearch,
+    sectionCards,
     SectionInterior,
+    sectionAboutUs,
+    SectionInterer,
+    SectionDesign,
+    // SectionDesign,
     sectionDefinition,
   },
 };
