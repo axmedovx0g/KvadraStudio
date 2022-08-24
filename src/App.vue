@@ -14,6 +14,8 @@
     <section-about-us></section-about-us>
     <section-interer></section-interer>
     <section-design></section-design>
+    <section-form></section-form>
+    <section-footer></section-footer>
   </div>
 </template>
 <script>
@@ -31,6 +33,8 @@ import SectionInterior from "@/components/sectionInterior";
 import sectionAboutUs from "@/components/sectionAboutUs.vue";
 import SectionInterer from "@/components/sectionInterer.vue";
 import SectionDesign from './components/section_Design.vue';
+import SectionForm from './components/sectionForm.vue';
+import SectionFooter from './components/sectionFooter.vue';
 
 
 export default {
@@ -50,6 +54,8 @@ export default {
     SectionDesign,
     // SectionDesign,
     sectionDefinition,
+    SectionForm,
+    SectionFooter,
   },
 };
 </script>
